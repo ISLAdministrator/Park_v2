@@ -78,4 +78,7 @@ function gameOver(reason) {
     displayText(`${reason} You get sleepy. Olga: I'm also sleepy, let's leave. You leave the park and go to sleep. Would you like to play again?`);
     clearChoices();
     addChoice("Yes", startGame);
-    addChoice("
+    addChoice("No", () => displayText("Thanks for playing!"));
+}
+
+startGame(); // Initialize the game
